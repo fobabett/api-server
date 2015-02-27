@@ -13,7 +13,21 @@ var Data = require('./traffic_data.js');
 var mockData = require('../data/mock_data.js');
 
 
+// fs
+//   .readdirSync(__dirname)
+//   .filter(function(file) {
+//     return (file.indexOf(".") !== 0) && (file !== basename);
+//   })
+//   .forEach(function(file) {
+//     var model = sequelize["import"](path.join(__dirname, file));
+//     db[model.name] = model;
+//   });
 
+// Object.keys(db).forEach(function(modelName) {
+//   if ("associate" in db[modelName]) {
+//     db[modelName].associate(db);
+//   }
+// });
 
 
 // sequelize
@@ -23,7 +37,7 @@ var mockData = require('../data/mock_data.js');
 //       console.log('An error occurred while creating the table:', err);
 //     } else {
 //       for(var i = 0; i < mockData.length; i++) {
-//          db.incident
+//         db.incident
 //         .create({
 //           item: mockData[i].item,
 //           date: mockData[i].date,

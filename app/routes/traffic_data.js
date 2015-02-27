@@ -40,6 +40,7 @@ router.get('/type/:type', function(req, res) {
 
 
 router.get('/incidents', function(req, res) {
+  var date = new Date();
     models.incident
       .findAll ({
         where: {
@@ -50,8 +51,7 @@ router.get('/incidents', function(req, res) {
       })
       .then(function(incidents) {
         res.json(incidents);
-      });
-  });
+    });
 });
 
 // get all incidents that occured in the last 4 hours
